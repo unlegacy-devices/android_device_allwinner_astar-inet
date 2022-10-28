@@ -1,0 +1,11 @@
+# mount point       fstype    device                                                                flags
+/bootloader         vfat      /dev/block/by-name/bootloader                                         flags=display="Bootloader";
+/env                emmc      /dev/block/by-name/env                                                flags=display="Env";
+/boot               emmc      /dev/block/by-name/boot                                               flags=display="Boot";backup=1;flashimg=1;
+/system             ext4      /dev/block/by-name/system                                             flags=display="System";backup=1;
+/system_image       emmc      /dev/block/by-name/system                                             flags=display="System image";backup=1;flashimg=1;
+/data               ext4      /dev/block/by-name/UDISK                                              flags=display="Data";
+/misc               emmc      /dev/block/by-name/misc                                               flags=display="Misc";backup=1;flashimg=1;
+/recovery           emmc      /dev/block/by-name/recovery                                           flags=display="Recovery";backup=1;flashimg=1;
+/cache              ext4      /dev/block/by-name/cache                                              flags=display="Cache";
+/extsd              vfat      /dev/block/mmcblk0                                                    flags=display="Extsd";
